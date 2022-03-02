@@ -20,7 +20,7 @@
       gaugeData = new google.visualization.DataTable();
       gaugeData.addColumn('number', 'Polution');
       gaugeData.addRows(2);
-      gaugeData.setCell(0, 0, 120);
+      gaugeData.setCell(0, 0, 50);
 
       gauge = new google.visualization.Gauge(document.getElementById('gauge_div'));
       gauge.draw(gaugeData, gaugeOptions);
