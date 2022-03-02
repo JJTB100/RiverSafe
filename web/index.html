@@ -6,8 +6,7 @@
 <body>
 <h1>Riversafe</h1>
 <p>This project is made by Jonathan Broster</p>
-</body>
-
+<html>
  <head>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
@@ -20,7 +19,8 @@
 
     function drawGauge() {
       gaugeData = new google.visualization.DataTable();
-      gaugeData.addColumn('number', 'Pollution');
+      gaugeData.addColumn('number', 'Engine');
+      gaugeData.addColumn('number', 'Torpedo');
       gaugeData.addRows(2);
       gaugeData.setCell(0, 0, 120);
       gaugeData.setCell(0, 1, 80);
@@ -41,8 +41,8 @@
   <input type="button" value="Go Faster" onclick="changeTemp(1)" />
   <input type="button" value="Slow down" onclick="changeTemp(-1)" />
  </body>
+</html>
 
 
-
-
+</body>
 </html>
