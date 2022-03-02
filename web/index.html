@@ -6,7 +6,7 @@
 <body>
 <h1>Riversafe</h1>
 <p>This project is made by Jonathan Broster</p>
-
+</body>
 
  <head>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -20,8 +20,7 @@
 
     function drawGauge() {
       gaugeData = new google.visualization.DataTable();
-      gaugeData.addColumn('number', 'Engine');
-      gaugeData.addColumn('number', 'Torpedo');
+      gaugeData.addColumn('number', 'Pollution');
       gaugeData.addRows(2);
       gaugeData.setCell(0, 0, 120);
       gaugeData.setCell(0, 1, 80);
