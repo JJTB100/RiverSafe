@@ -1,0 +1,18 @@
+body {
+    background-color:powderblue;
+    font-family: Roboto;
+}
+
+#logo {
+    width:200px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+#gauge_div {
+    width:480px; 
+    height: 240px;
+    display:block;
+    margin: 0 auto;
+
+}
