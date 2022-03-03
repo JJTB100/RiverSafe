@@ -1,9 +1,12 @@
 body {
-    background-image: linear-gradient(#68cce1, #20d170);
-    height: 100vh;
-    font-family: Roboto;
-}
 
+    background: linear-gradient(to top right, rgba(51, 242, 175, 0.5), rgba(24, 127, 153, 0.5)), url("media/ripples.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    font-family: Montserrat;
+}
 
 #logo {
     width:200px;
