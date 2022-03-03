@@ -6,8 +6,11 @@ body {
     background-size: cover;
     height: 100vh;
     font-family: Montserrat;
+    
 }
-
+#mainText{
+    max-width: calc(100vw - 200px);
+}
 #logo {
     width:200px;
     position: absolute;
