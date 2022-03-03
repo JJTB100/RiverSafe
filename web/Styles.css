@@ -1,7 +1,9 @@
 body {
-    background-color:green;
+    background-image: linear-gradient(#68cce1, #20d170);
+    height: 100vh;
     font-family: Roboto;
 }
+
 
 #logo {
     width:200px;
