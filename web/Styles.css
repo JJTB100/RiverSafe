@@ -1,15 +1,28 @@
 body {
 
-    background: linear-gradient(to top right, rgba(51, 242, 175, 0.5), rgba(24, 127, 153, 0.5)), url("media/ripples.png");
+    background: linear-gradient(to top right, rgba(51, 242, 250, 0.3), rgba(24, 127, 153, 0.5)), url("media/ripples.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     font-family: Montserrat;
-    
+
+}
+#heading{
+    max-width: calc(100vw - 230px);
+    text-align: center;
+
 }
 #mainText{
-    max-width: calc(100vw - 200px);
+    max-width: calc(100vw - 230px);
+    text-align: left;
+    font-size: 20px;
+}
+
+#acknowledgements{
+    max-width: calc(100vw - 230px);
+    text-align: left;
+    font-size: 15px;
 }
 #logo {
     width:200px;
@@ -18,9 +31,9 @@ body {
     right:0;
 }
 #gauge_div {
-    width:480px; 
-    height: 240px;
-    display:block;
+    width: 50vw; 
+    height: 50vh;
+    display: block;
     margin: 0 auto;
 
 }
