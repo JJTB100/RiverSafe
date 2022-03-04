@@ -33,9 +33,8 @@ function updateValue() {
 }
 
 
-$(init);
-
-
 function init() {
     setTimeout(updateValue, 2000);
 }
+
+$(init);
