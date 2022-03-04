@@ -57,7 +57,7 @@ function updateValue() {
 
 function init() {
     drawChart()
-    drawGraph();
+    drawGauge();
     setTimeout(updateValue, 2000);
 }
 
