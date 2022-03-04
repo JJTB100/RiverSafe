@@ -35,5 +35,10 @@ body {
     height: 50vh;
     display: block;
     margin: 0 auto;
-
+}
+#curve_chart {
+    width: 50vw; 
+    height: 50vh;
+    display: block;
+    margin: 0 auto;
 }
