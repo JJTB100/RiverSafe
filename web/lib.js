@@ -2,8 +2,9 @@ google.charts.load('current', { 'packages': ['gauge'] });
 google.charts.setOnLoadCallback(drawGauge);
 
 var gaugeOptions = {
-    min: 0, max: 100, yellowFrom: 70, yellowTo: 85,
-    redFrom: 85, redTo: 100, minorTicks: 5
+    min: 0, max: 600, yellowFrom: 300, yellowTo: 400,
+    greenFrom: 0, greenTo:300,
+    redFrom: 400, redTo: 600, minorTicks: 5
 };
 var gauge;
 
