@@ -9,7 +9,7 @@ var gauge;
 
 function drawGauge() {
     gaugeData = new google.visualization.DataTable();
-    gaugeData.addColumn('number', 'Polution');
+    gaugeData.addColumn('number', 'Pollution');
     gaugeData.addRows(2);
     gaugeData.setCell(0, 0, 50);
 
