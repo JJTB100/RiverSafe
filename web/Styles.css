@@ -42,3 +42,6 @@ body {
     display: block;
     margin: 0 auto;
 }
+#info_holder{
+    text-align: center;
+}
