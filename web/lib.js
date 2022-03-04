@@ -45,14 +45,14 @@ function changeTemp(dir) {
 }
 
 function updateValue() {
-    console.log("updating");
+    //console.log("updating");
     $.getJSON('tds.js', function(data) {
-        console.log(data);
+        //console.log(data);
+        gaugeData.setValue(0, 0, data);
+        gauge.draw(gaugeData, gaugeOptions);
         setTimeout(updateValue, 2000);    
     });
-    var v = Math.random() * 100;
-    gaugeData.setValue(0, 0, v);
-    gauge.draw(gaugeData, gaugeOptions);
+    
 }
 
 
