@@ -48,7 +48,7 @@ function updateValue() {
     //console.log("updating");
     $.ajax({
         cache: false,
-        url: "/path/tds.js",
+        url: "tds.js",
         dataType: "json",
         success: function(data) {
             //console.log(data);
