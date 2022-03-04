@@ -24,6 +24,7 @@ function changeTemp(dir) {
 }
 
 function updateValue() {
+    console.log("updating");
     $.getJSON('tds.js', function(data) {
         console.log(data);
     });
