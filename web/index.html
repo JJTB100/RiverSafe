@@ -27,13 +27,23 @@
          </div>
      </div>
 
-
         <div class="left" >
+                <div id="gauge_div"></div>
+                <p class="caption">
                 RiverSafe is designed to test the pollution levels of water,
                 to help combat big companies putting sewage into rivers, and to spread awareness of it. The dial to the left shows the current water pollution that is being picked up by the sensor attached to our RaspberryPi Pico.
-                
-                <div id="gauge_div"></div>
+                </p>
         </div>
+
+  
+        <div class="right">
+            
+            <div id="curve_chart"></div>
+            <p class="caption">
+            Graph showing pollution logged over the last few days in the location that the device has been left. (Work In Progress)
+            </p>
+        </div>
+
 
         <div class="middle">
             This is a useful table containing what the Pollution Level seen measured here actually means. As you can see, most tap water will be 100-400, but anything over that can be dangerous.
@@ -43,12 +53,7 @@
                 <img src="media/info.jpg" id="info" />
             </div>
         </div> 
-  
-        <div class="right">
-            This is a Graph showing pollution logged over the last few days in the location that the device has been left. (Work In Progress)
-            <div id="curve_chart"></div>
-        </div>
-  
+
         <div class="footer">
 
                 <button id="button" 
