@@ -48,6 +48,7 @@ function updateValue() {
     console.log("updating");
     $.getJSON('tds.js', function(data) {
         console.log(data);
+        setTimeout(updateValue, 2000);    
     });
     var v = Math.random() * 100;
     gaugeData.setValue(0, 0, v);
@@ -58,7 +59,5 @@ function updateValue() {
 function init() {
     drawChart()
     drawGauge();
-    setTimeout(updateValue, 2000);
+    updateValue();
 }
-
-$(init);
