@@ -1,5 +1,5 @@
-google.charts.load('current', { 'packages': ['gauge'] });
-google.charts.setOnLoadCallback(drawGauge);
+google.charts.load('current', { 'packages': ['gauge', 'corechart'] });
+google.charts.setOnLoadCallback(init);
 
 var gaugeOptions = {
     min: 0, max: 600, yellowFrom: 300, yellowTo: 400,
@@ -16,7 +16,28 @@ function drawGauge() {
 
     gauge = new google.visualization.Gauge(document.getElementById('gauge_div'));
     gauge.draw(gaugeData, gaugeOptions);
+    
 }
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Date', 'Expected', 'Current'],
+      ['3 Days Ago',  70,      100],
+      ['2 Days Ago',  50,      90],
+      ['Yesturday',  70,       80],
+      ['Today',  20,      50]
+    ]);
+
+    var options = {
+      title: 'Pollution',
+      curveType: 'function',
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
 
 function changeTemp(dir) {
     gaugeData.setValue(0, 0, gaugeData.getValue(0, 0) + dir * 25);
@@ -35,6 +56,8 @@ function updateValue() {
 
 
 function init() {
+    drawChart()
+    drawGraph();
     setTimeout(updateValue, 2000);
 }
 
