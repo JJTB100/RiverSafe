@@ -24,9 +24,18 @@ function changeTemp(dir) {
 }
 
 function updateValue() {
+    $.getJSON('tds.js', function(data) {
+        console.log(data);
+    });
     var v = Math.random() * 100;
     gaugeData.setValue(0, 0, v);
     gauge.draw(gaugeData, gaugeOptions);
 }
 
-setInterval(updateValue, 2000);
+
+$(init);
+
+
+function init() {
+    setTimeout(updateValue, 2000);
+}
