@@ -12,7 +12,8 @@ body {
   display: grid;
   grid-template-areas: 
     'header header header header header header' 
-    'left left middle middle right right' 
+    'left left left right right right' 
+    'middle middle middle middle middle middle'
     'footer footer footer footer footer footer';
   grid-column-gap: 10px; /*gap between the columns */
 } 
@@ -29,6 +30,7 @@ body {
 .left {
   grid-area: left;
   border-radius: 12px;
+  width: 50%;
 }
 
 /* Style the middle column */
@@ -41,6 +43,7 @@ body {
 .right {
   grid-area: right;
   border-radius: 12px;
+  width: 50%;
 }
 
 /* Style the footer */
