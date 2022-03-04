@@ -4,85 +4,120 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
     font-family: Montserrat;
 }
 
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  grid-column-gap: 10px; /* if you want gap between the columns */
+} 
 
-#heading{
-    font-family: 'Exo', sans-serif;; 
-    text-align: center;
-    font-size: 400;
-    margin: auto;
-
+.left,
+.middle,
+.right {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid black;
 }
-#mainText{
-    max-width: calc(100vw);
-    text-align: center;
-    font-size: 30px;
-    border: 2px solid black;
-    margin-top: 20px;
-    padding: 5px 10px;
 
+/* Style the left column */
+.left {
+  grid-area: left;
 }
 
-#button{
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid black;
-    color: #011837;
-    padding: 5px 10px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    margin: 10px 30px;
-    cursor: pointer;
-    text-decoration:none;
+/* Style the middle column */
+.middle {
+  grid-area: middle;
 }
-#buttonsDiv{
-    margin: 10px auto;
-    text-align: center;
 
+/* Style the right column */
+.right {
+  grid-area: right;
 }
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: rgba(0,0,0,0);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+#RiverSafe{
+      font-family: 'Exo', sans-serif;
+}
+
 #acknowledgements{
-    max-width: calc(100vw - 460px);
-    left: 230px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid black;
-    margin: auto;
-    
 }
+
 #logo {
     width:200px;
     position: absolute;
     top:0;
     right:0;
-
 }
+#buttonsDiv{
+    margin: 10px auto;
+    text-align: center;
+}
+    #button{
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid black;
+        color: #011837;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 30px;
+        cursor: pointer;
+    }
+
+#info_holder{
+    text-align: center;
+    margin : 20px auto;
+}
+    #info{
+       border: 2px solid black;
+    }
+
 #gauge_div {
     width: 200px; 
     height: 200px;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top:0;
-    left:0;
-
+    margin: auto;
 }
 #curve_chart {
-    width: 50vw; 
-    height: 50vh;
-    display: block;
-    margin: 0 auto;
+    width: 500px; 
+    height: 267px;
+    margin: auto;
     border: 2px solid black;
     margin-top: 20px;
 }
-#info_holder{
-    margin-top: 20px;
-    text-align: center;
 
-    margin : 20px auto;
-}
-#info{
-   border: 2px solid black;
-}
