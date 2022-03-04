@@ -46,11 +46,16 @@ function changeTemp(dir) {
 
 function updateValue() {
     //console.log("updating");
-    $.getJSON('tds.js', function(data) {
-        //console.log(data);
-        gaugeData.setValue(0, 0, data);
-        gauge.draw(gaugeData, gaugeOptions);
-        setTimeout(updateValue, 2000);    
+    $.ajax({
+        cache: false,
+        url: "/path/tds.js",
+        dataType: "json",
+        success: function(data) {
+            //console.log(data);
+            gaugeData.setValue(0, 0, data);
+            gauge.draw(gaugeData, gaugeOptions);
+            setTimeout(updateValue, 2000);    
+        }
     });
     
 }
