@@ -5,6 +5,7 @@ var gaugeOptions = {
     min: 0, max: 600, yellowFrom: 300, yellowTo: 400,
     greenFrom: 0, greenTo:300,
     redFrom: 400, redTo: 600, minorTicks: 5
+
 };
 var gauge;
 
@@ -31,7 +32,9 @@ function drawChart() {
     var options = {
       title: 'Pollution',
       curveType: 'function',
-      legend: { position: 'bottom' }
+      legend: { position: 'bottom' },
+
+      
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
