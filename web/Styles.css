@@ -11,10 +11,10 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas: 
-    'header header' 
-    'left right' 
-    'middle middle'
-    'footer footer';
+      'header header' 
+      'left right' 
+      'middle middle' 
+      'footer footer';
   grid-column-gap: 10px; /*gap between the columns */
 } 
 
@@ -34,6 +34,7 @@ body {
 .caption{
     position:absolute;
     text-align: center;
+
     bottom: 0%;
 }
 
@@ -56,7 +57,7 @@ body {
 .right {
   grid-area: right;
   border-radius: 12px;
-  position: relative;
+
 }
 
 /* Style the footer */
@@ -140,19 +141,18 @@ h1 {
     }
 
 #gauge_div {
-    width: 70%; 
-    height: 80%;
-    margin: 0 auto;
+    display: inline-block;
+    margin: auto;
+    height:80%;
+    text-align: center;
+
 }
+
 #curve_chart {
     height: 70%;
     width: 100%;
     margin: auto;
     border: 2px solid #295159; 
-    position: absolute;
-
 }
 
-curve_chart:first-child {
 
-}
