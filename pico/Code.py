@@ -1,6 +1,5 @@
-# Simple oscilloscope for a Raspberry Pi Pico
-# Press the buttons to toggle the traces
-# Designed for use with an pcio explorer board
+# Water quality sensor
+# Designed for use with a pico explorer board and a TDS sensor attached to ADC0
 import picoexplorer as display
 import machine
 import utime
