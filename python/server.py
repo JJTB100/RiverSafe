@@ -13,7 +13,7 @@ while True:
   f = open(FILENAME, "w")
   tds = match.group(1)
   temperature = match.group(2)
-  f.write{"{{temp:{},tds:{}}}".format(temp, tds))
+  f.write({"{{temp:{},tds:{}}}".format(temp, tds))
 
   f.close()
   
