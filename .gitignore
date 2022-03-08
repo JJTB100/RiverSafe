@@ -5,3 +5,5 @@
 /web/media/Thumbs.db
 /web/.vs/*
 *.sqlite
+/.vs/config/applicationhost.config
+.vs/*
