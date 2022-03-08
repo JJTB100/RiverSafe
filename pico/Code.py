@@ -69,10 +69,11 @@ while True:
     bar_width = int(tds_value / 600 * WIDTH)
     display.rectangle(0, HEIGHT - 10, bar_width, 10)
     
-    # send tds value to raspberry pi
-    print(int(tds_value))
+    # send tds value and temp. to raspberry pi
+    print("{:},{:}".format(int(tds_value), temperature))
     
     # update display
     display.update()
     utime.sleep(1)
+
 
