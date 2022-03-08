@@ -1,10 +1,12 @@
 google.charts.load('current', { 'packages': ['gauge', 'corechart'] });
 google.charts.setOnLoadCallback(init);
+window.onresize=init;
 
 var gaugeOptions = {
     min: 0, max: 600, yellowFrom: 300, yellowTo: 400,
     greenFrom: 0, greenTo:300,
     redFrom: 400, redTo: 600, minorTicks: 5
+
 };
 var gauge;
 
@@ -16,7 +18,6 @@ function drawGauge() {
 
     gauge = new google.visualization.Gauge(document.getElementById('gauge_div'));
     gauge.draw(gaugeData, gaugeOptions);
-    
 }
 
 function drawChart() {
@@ -31,7 +32,8 @@ function drawChart() {
     var options = {
       title: 'Pollution',
       curveType: 'function',
-      legend: { position: 'bottom' }
+      legend: { position: 'bottom' },
+  
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -62,7 +64,8 @@ function updateValue() {
 
 
 function init() {
-    drawChart()
+    drawChart();
     drawGauge();
+
     updateValue();
 }
