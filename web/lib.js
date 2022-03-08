@@ -50,11 +50,11 @@ function updateValue() {
     //console.log("updating");
     $.ajax({
         cache: false,
-        url: "tds.js",
+        url: "tds.json",
         dataType: "json",
         success: function(data) {
-            //console.log(data);
-            gaugeData.setValue(0, 0, data);
+            console.log(data);
+            gaugeData.setValue(0, 0, data.tds);
             gauge.draw(gaugeData, gaugeOptions);
             setTimeout(updateValue, 2000);    
         }
