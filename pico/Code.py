@@ -47,7 +47,7 @@ while True:
         msg = "Hard Water"
         display.set_pen(159,205,255)
     elif tds_value < 300:
-        msg = "Slightly Bad"
+        msg = "Acceptable"
         display.set_pen(97,65,250)
     elif tds_value < 400:
         msg = "Bad"
