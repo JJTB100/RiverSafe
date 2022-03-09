@@ -3,6 +3,8 @@
     <head>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script src="lib.js"></script>
+        <script src="show-on-scroll.js"></script>
+        <script scc="https://www.google.com/jsapi"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>RiverSafe</title>
             <link rel="stylesheet" href="styles.css" />
@@ -12,7 +14,7 @@
 <body>
 
     <div class="grid-container">
-        <div class="header">
+        <div class="header show-on-scroll">
             <div id="RiverSafe">
                 <h1>RiverSafe</h1>
             </div>
@@ -29,6 +31,7 @@
 
         <div class="left">
             <div id="gauge_tds_div"></div>
+            <div id="gauge_temp_div"></div> 
 
             <p class="caption">
                 RiverSafe is designed to test the pollution levels of water,
@@ -37,32 +40,27 @@
         </div>
 
         <div>
-            <div id="gauge_temp_div"></div>
 
-            <p class="caption">
-                RiverSafe is designed to test the pollution levels of water,
-                to help combat big companies putting sewage into rivers, and to spread awareness of it. The dial to the left shows the current water pollution that is being picked up by the sensor attached to our RaspberryPi Pico.
-            </p>
         </div>
 
         
 
 
-        <div class="right">
+  <!--     <div class="right">
 
-            <div id="curve_chart"></div>
 
             <p class="caption">
                 Graph showing pollution logged over the last few days in the location that the device has been left. (Work In Progress)
             </p>
-        </div>
 
+        </div> -->
+        
 
         <div class="middle">
 
 
             <div id="info_holder">
-                <img src="media/info.jpg" id="info" />
+                <img src="media/info.jpg" id="info" class="show-on-scroll"/>
             </div>
             <p>
                 This is a useful table containing what the Pollution Level seen measured here actually means. As you can see, most tap water will be 100-400, but anything over that can be dangerous.
@@ -81,6 +79,9 @@
                     onclick="window.location.href = '-addlinkhere-';">
                 For Instructions On How To Make Your Own Click Here
             </button>
+        
+            
+
 
         </div>
     </div>
