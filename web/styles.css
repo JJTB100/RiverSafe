@@ -144,7 +144,8 @@ h1 {
 
 #info_holder{
     text-align: center;
-    margin : 0px auto;
+    margin : auto;
+    margin-top: 15px;
 }
     #info{
        border: 2px solid #295159;
