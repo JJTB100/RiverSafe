@@ -5,11 +5,13 @@ window.onresize=init;
 var gaugeOptionsTDS = {
     min: 0, max: 600, yellowFrom: 300, yellowTo: 400,
     greenFrom: 0, greenTo:300,
-    redFrom: 400, redTo: 600, minorTicks: 5
+    redFrom: 400, redTo: 600, minorTicks: 5,
+
 };
 
 var gaugeOptionsTmp = {
-    min: -10, max: 100
+    min: -10, max: 100,
+
 };
 var gaugeTDS;
 var gaugeTemp;

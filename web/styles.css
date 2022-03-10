@@ -21,7 +21,7 @@ body {
 .middle,
 .right {
   position:relative;
-  padding: 20px;
+  padding: 0px;
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid #295159;
   min-height: 400px;
@@ -29,10 +29,18 @@ body {
 }
 
 .caption {
-    position: absolute;
-    display: block;
+    padding: 5px;
+    border-radius: 12px;
+    position:absolute;
+    width: calc(100% - 30px);
+    bottom: 0px;
     text-align: center;
-    bottom: 0%;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #295159;
+    word-wrap: break-word;
+
 }
 
 /* Style the left column */
@@ -48,6 +56,7 @@ body {
   grid-area: middle;
   border-radius: 12px;
   margin-top: 10px;
+  display: flex;
 }
 
 /* Style the right column */
@@ -69,6 +78,10 @@ body {
 
 h1 {
     margin: 0px;
+}
+
+#message{
+    font-size: 18px;
 }
 
 /* Style the header */
@@ -139,19 +152,15 @@ h1 {
 
 #gauge_temp_div,
 #gauge_tds_div{
+    margin: auto;
+    position: flex;
+    top: 0;
 
     text-align: center;
-    margin: auto;
+
     height: 80%;
 
 }
-/*
-#gauge_temp_div{
-    float: right;
-}
-#gauge_tds_div {
-    float: left;
-}*/
 
 
 
