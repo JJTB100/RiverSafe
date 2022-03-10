@@ -1,21 +1,19 @@
 body {
-
     background: linear-gradient(to top right, rgba(51, 150, 150, 0.3), rgba(24, 150, 153, 0.3)), url("media/ripples.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: Montserrat;
+    font-family: Monsterrat, sans-serif;
 }
 
 /* The grid container */
 .grid-container {
   display: grid;
   grid-template-areas: 
-      'header' 
-      'left' 
-      'right'
-      'middle' 
-      'footer';
+      'header header' 
+      'left right' 
+      'middle middle' 
+      'footer footer';
   grid-column-gap: 10px; /*gap between the columns */
 } 
 
@@ -27,24 +25,22 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid #295159;
   min-height: 400px;
+  
 }
 
-.dir{
-
-}
-.caption{
-    position:absolute;
+.caption {
+    position: absolute;
+    display: block;
     text-align: center;
-    float: bottom;
     bottom: 0%;
 }
 
 /* Style the left column */
 .left {
-  margin-bottom: 10px;
-  grid-area: left;
-  border-radius: 12px;
-
+    grid-area: left;
+    border-radius: 12px;
+    display: flex;
+    margin-top: -10px;
 }
 
 /* Style the middle column */
@@ -56,9 +52,10 @@ body {
 
 /* Style the right column */
 .right {
-  grid-area: right;
-  border-radius: 12px;
-
+    grid-area: right;
+    border-radius: 12px;
+    display: flex;
+    margin-top: -10px;
 }
 
 /* Style the footer */
@@ -142,8 +139,19 @@ h1 {
 
 #gauge_temp_div,
 #gauge_tds_div{
-    margin: auto;
+
     text-align: center;
+    margin: auto;
+    height: 80%;
+
 }
+/*
+#gauge_temp_div{
+    float: right;
+}
+#gauge_tds_div {
+    float: left;
+}*/
+
 
 
