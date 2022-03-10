@@ -47,12 +47,14 @@ function drawChart() {
       title: 'Pollution',
       curveType: 'function',
       legend: { position: 'bottom' },
-  
+
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
+
     chart.draw(data, options);
+
   }
 
 
@@ -76,8 +78,11 @@ function updateValue() {
 
 
 function init() {
+
     drawChart();
     drawGauge();
-
     updateValue();
+
 }
+
+

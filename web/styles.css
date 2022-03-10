@@ -10,10 +10,11 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas: 
-      'header header' 
-      'left right' 
-      'middle middle' 
-      'footer footer';
+      'header' 
+      'left' 
+      'right'
+      'middle' 
+      'footer';
   grid-column-gap: 10px; /*gap between the columns */
 } 
 
@@ -33,13 +34,13 @@ body {
 .caption{
     position:absolute;
     text-align: center;
-
+    float: bottom;
     bottom: 0%;
 }
 
 /* Style the left column */
 .left {
-
+  margin-bottom: 10px;
   grid-area: left;
   border-radius: 12px;
 
@@ -87,7 +88,6 @@ h1 {
     grid-template-areas: 
       'header' 
       'left' 
-      'right' 
       'middle' 
       'footer';
   }
@@ -139,19 +139,10 @@ h1 {
        border: 2px solid #295159;
     }
 
-#gauge_div {
-    display: inline-block;
+#gauge_temp_div,
+#gauge_tds_div{
     margin: auto;
-    height:80%;
     text-align: center;
-
-}
-
-#curve_chart {
-    height: 70%;
-    width: 100%;
-    margin: auto;
-    border: 2px solid #295159; 
 }
 
 
