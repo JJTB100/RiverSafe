@@ -149,6 +149,7 @@ h1 {
 }
     #info{
        border: 2px solid #295159;
+       border-radius: 12px;
     }
 
 #gauge_temp_div,
