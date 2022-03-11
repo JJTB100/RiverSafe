@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/web/media/Thumbs.db
+/web/.vs/*
+*.sqlite
+/.vs/config/applicationhost.config
+.vs/*
+*.suo
+/RiverSafe/.vs/*
