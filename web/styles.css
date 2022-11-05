@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to top right, rgba(51, 150, 150, 0.3), rgba(24, 150, 153, 0.3)), url("media/ripples.png");
+    background: linear-gradient(to top right, rgba(52, 149, 235, 0.7), rgba(162, 227, 250, 0.3)), url("media/ripples.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -118,11 +118,13 @@ h1 {
     margin-bottom: 50px;
 }
 
+}
 #logo {
-    width:200px;
-    position: absolute;
-    top:0;
-    right:0;
+    width: 10%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    right: 0;
 }
 
     #button{
