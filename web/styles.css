@@ -121,7 +121,7 @@ h1 {
 
 #logo {
     width: 10%;
-    position: ;
+    position: absolute;
     top: 0;
     right: 0;
 }
