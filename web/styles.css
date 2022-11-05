@@ -81,7 +81,7 @@ h1 {
 }
 
 #message{
-    font-size: 18px;
+    font-size: 25px;
 }
 
 /* Style the header */
@@ -110,7 +110,7 @@ h1 {
 
 #acknowledgements{
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 
     
     padding-left: 15%;
@@ -118,11 +118,10 @@ h1 {
     margin-bottom: 50px;
 }
 
-}
+
 #logo {
     width: 10%;
-    position: sticky;
-    position: -webkit-sticky;
+    position: absolute;
     top: 0;
     right: 0;
 }
