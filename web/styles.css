@@ -155,7 +155,7 @@ h1 {
 #gauge_temp_div,
 #gauge_tds_div{
     margin: auto;
-    position: flex;
+    display: flex;
     top: 0;
 
     text-align: center;
