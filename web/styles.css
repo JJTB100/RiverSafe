@@ -1,6 +1,6 @@
 body {
     
-    background: linear-gradient(to top right, rgba(52, 149, 235, 0.7), rgba(162, 227, 250, 0.3)) /*url("media/ripples.png")*/;
+    background: linear-gradient(to top right, rgba(16, 38, 56, 0.7), rgba(0, 187, 255, 0.116)) /*url("media/ripples.png")*/;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -60,26 +60,29 @@ body {
     height: 100vh;
     display:flex;
     align-items: center;
+    width: 100vw;
 }
 
 #menu[data-active-index="0"] > #menu-background-pattern {
     background-position: 0% -25%;
-}
-
-#menu[data-active-index="1"] > #menu-background-pattern {
+  }
+  
+  #menu[data-active-index="1"] > #menu-background-pattern {
     background-position: 0% -50%;
-}
-
-#menu[data-active-index="2"] > #menu-background-pattern {
+  }
+  
+  #menu[data-active-index="2"] > #menu-background-pattern {
     background-position: 0% -75%;
-}
-
-#menu[data-active-index="3"] > #menu-background-pattern {
+  }
+  
+  #menu[data-active-index="3"] > #menu-background-pattern {
     background-position: 0% -100%;
-}
+  }
+
 
 #menu-items {
     margin-left: clamp(4rem, 20vw, 48rem);
+    position: relative;
     z-index:2;
 }
 
@@ -99,24 +102,23 @@ body {
     padding: clamp(0.25rem, 0.5vw, 1rem)0rem;
     transition: opacity 400ms ease;
 }
-#menu-background-pattern{
-    height:100vh;
-    width:100vw;
-
-    background-image:radial-gradient(
-        rgba(2255, 255, 255, 0.2) 9%,
-        transparent 9%
+#menu-background-pattern {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 9%, 
+      transparent 9%
     );
     background-position: 0% 0%;
-    background-size:12vmin 12vmin;
-
+    background-size: 12vmin 12vmin;
+    height: 100vh;
+    left: 0px;
     position: absolute;
-    left:0px;
-    right:0px;
-    z-index:1;
-
-    transition: opacity 800ms ease, background-size 800ms ease;
-}
+    top: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 1;
+  }
 
 #menu-items:hover ~ #menu-background-pattern {
     background-size: 11vmin 11vmin;
