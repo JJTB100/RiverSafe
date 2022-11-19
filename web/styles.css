@@ -119,6 +119,15 @@ body {
     width: 100vw;
     z-index: 1;
   }
+  #menu-background-image{
+    height: 100%;
+    width: 100%;
+
+    background-image: "media/menuImage";
+
+    position: absolute;
+
+  }
 
 #menu-items:hover ~ #menu-background-pattern {
     background-size: 11vmin 11vmin;
