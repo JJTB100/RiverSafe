@@ -1,0 +1,69 @@
+:root {
+    --dark: rgb(20, 20, 20);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+    
+    --c1: rgb(38, 70, 83);
+    --c2: rgb(42, 157, 143);
+    
+    --left-colour: var(--c1);
+    --right-colour: var(--c2);
+  }
+  
+body {  
+    background-color: var(--dark);
+    margin: 0px;
+  }
+
+
+.side {
+    height:100vh;
+    width:100%;
+
+    display:grid;
+    place-items:center;
+
+    overflow:hidden;
+    position:absolute;
+
+    text-align: center;
+}
+
+.side .title {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    margin: 0px 15vw;
+    width:70vw;
+}
+
+.side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+
+#left-side {
+    background-color: var(--left-colour);
+    z-index: 2;
+}
+
+#left-side .title {
+    color: white;
+}
+
+#left-side .fancy {
+    color: var(--right-colour);
+}
+
+#right-side {
+    background-color: var(--right-colour);
+}
+
+#right-side .title {
+    color: var(--dark);
+}
+
+#right-side .fancy {
+    color: white
+}
