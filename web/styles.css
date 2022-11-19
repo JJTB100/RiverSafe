@@ -39,8 +39,8 @@ body {
 #logo {
     width: 10%;
     position: absolute;
-    top: 13%;
-    left: 10%;
+    top: 11%;
+    left: 9%;
     
 
 }
@@ -86,20 +86,26 @@ body {
 #menu[data-active-index="3"] > #menu-background-image {
   background-position: center 60%;
 }
+#menu[data-active-index="4"] > #menu-background-image {
+  background-position: center 70%;
+}
 
 #menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -25%;
+    background-position: 0% -0%;
   }
   
   #menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -50%;
+    background-position: 0% -25%;
   }
   
   #menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -75%;
+    background-position: 0% -50%;
   }
   
   #menu[data-active-index="3"] > #menu-background-pattern {
+    background-position: 0% -75%;
+  }
+  #menu[data-active-index="4"] > #menu-background-pattern {
     background-position: 0% -100%;
   }
 
@@ -111,7 +117,7 @@ body {
     position: relative;
     z-index:2;
 
-    transform: translateY(20%);
+    transform: translateY(12%);
 }
 
 #menu-items:hover > .menu-item{
