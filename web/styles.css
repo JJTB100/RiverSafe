@@ -4,8 +4,12 @@ body {
     
     /*background: linear-gradient(to top right, rgba(16, 38, 56, 0.7), rgba(0, 187, 255, 0.116)) url("media/ripples.png");*/
     background-color: rgb(5, 11, 12);
-    font-family: 'Exo',  "Roboto", sans-serif;
+    @font-face{
+      font-family: ExoBold900;
+      src:family: url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+    } 
     
+    font-family: ExoBold900;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
