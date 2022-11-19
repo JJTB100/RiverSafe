@@ -45,22 +45,6 @@ body {
 
 }
 
-    #button{
-        background-color: rgba(255, 255, 255, 0.3);
-        border: 2px solid #295159;
-        color: black;
-        padding: 5px 10px;
-        text-align: center;
-        font-size: 20px;
-        margin: 10px 30px;
-        cursor: pointer;
-        border-radius: 12px;
-        transition-duration: 0.4s;
-    }
-    #button:hover {
-        background-color: #295159;
-        color: white;
-    }
 
 
 #menu{
@@ -72,41 +56,41 @@ body {
 }
 
 #menu[data-active-index="0"] > #menu-background-image {
-  background-position: center 45%;
+  background-position: center 10%;
 }
 
 #menu[data-active-index="1"] > #menu-background-image {
-  background-position: center 50%;
+  background-position: center 30%;
 }
 
 #menu[data-active-index="2"] > #menu-background-image {
-  background-position: center 55%;
+  background-position: center 50%;
 }
 
 #menu[data-active-index="3"] > #menu-background-image {
-  background-position: center 60%;
+  background-position: center 70%;
 }
 #menu[data-active-index="4"] > #menu-background-image {
-  background-position: center 70%;
+  background-position: center 90%;
 }
 
 #menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -0%;
+    background-position: 10% -50vmin;
   }
   
   #menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -25%;
+    background-position: 10% -100vmin;
   }
   
   #menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -50%;
+    background-position: 10% -150vmin;
   }
   
   #menu[data-active-index="3"] > #menu-background-pattern {
-    background-position: 0% -75%;
+    background-position: 10% -200vmin;
   }
   #menu[data-active-index="4"] > #menu-background-pattern {
-    background-position: 0% -100%;
+    background-position: 10% -250vmin;
   }
 
 
@@ -138,26 +122,34 @@ body {
     transition: opacity 400ms ease;
 }
 #menu-background-pattern {
-    background-image: radial-gradient(
-      rgba(191, 244, 255, 0.1) 9%, 
+    /*background-image: radial-gradient(
+      rgba(191, 244, 255, 0.1) 10%, 
       transparent 9%
-    );
-    background-position: 0% 0%;
-    background-size: 12vmin 12vmin;
+    );*/
+    background-image: url("media/RiverSafeLogo.png");
+    opacity: 0.1;
+    background-repeat:repeat-y, space;
+    
+    
+    background-position: 10% 40%;
+    background-size: 60vmin 60vmin;
     height: 100vh;
     left: 0px;
     position: absolute;
     top: 0px;
     transition: opacity 800ms ease, 
-      background-size 800ms ease,
-      background-position 800ms ease;
+      background-size 2000ms ease,
+      background-position 4000ms ease;
     width: 100vw;
     z-index: -1;
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
   }
   #menu-background-image{
     height: 100vh;
     width: 100vw;
-
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
     background-image: url("media/menuImage3.jpg");
 
     position: absolute;
@@ -170,8 +162,8 @@ body {
     opacity: 0.15;
 
     transition: opacity 800ms ease,
-    background-size 800ms ease,
-    background-position 800ms ease;
+    background-size 2000ms ease,
+    background-position 4000ms ease;
   }
 
 #menu-items:hover ~ #menu-background-image {
@@ -180,8 +172,8 @@ body {
 }
 
 #menu-items:hover ~ #menu-background-pattern {
-    background-size: 11vmin 11vmin;
-    opacity: 0.7;
+    background-size: 60vmin 60vmin;
+    opacity: 0.3;
 }
 #main-name{
   margin:0;
