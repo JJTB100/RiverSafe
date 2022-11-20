@@ -1,3 +1,5 @@
+/*
+
 google.charts.load('current', { 'packages': ['gauge', 'corechart'] });
 google.charts.setOnLoadCallback(init);
 window.onresize=init;
@@ -65,4 +67,4 @@ function init() {
     updateValue();
 
 }
-
+*/
