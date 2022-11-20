@@ -1,0 +1,34 @@
+:root {
+    --dark: #000000 ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px 50px;
+
+    grid-template-areas: 
+    'map       search' 
+    'tds-scale tds-scale';
+}
+
+.grid {
+    border:#000000;
+}
+
+.grid_top_left {
+    grid-area: map;
+}
+
+.grid_top_right {
+    grid-column: 2;
+    grid-area: search;
+}
+
+.grid_bottom {
+    grid-area: tds-scale;
+}
