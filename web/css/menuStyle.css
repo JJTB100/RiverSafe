@@ -164,7 +164,7 @@ body {
 
     transition: opacity 800ms ease,
     background-size 2000ms ease,
-    background-position 4000ms ease;
+    background-position 800ms ease;
   }
 
 #menu-items:hover ~ #menu-background-image {
